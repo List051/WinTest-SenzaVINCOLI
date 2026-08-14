@@ -47,14 +47,21 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ordina.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CMBoxVB">
-      <HintPath>..\..\CMBoxVB.dll</HintPath>
+      <HintPath>..\..\Tutte_Librerie\CMBoxVB.dll</HintPath>
     </Reference>
     <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.10.0.10\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -64,6 +71,10 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="WinItalPascal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WinItalPascal\bin\Debug\WinItalPascal.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -79,18 +90,63 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="DBSalvaTabella.vb" />
+    <Compile Include="DBSalvaTabelle.vb" />
+    <Compile Include="FemInsClienti.Designer.vb">
+      <DependentUpon>FemInsClienti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FemInsClienti.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FrmAprire.Designer.vb">
+      <DependentUpon>FrmAprire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAprire.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModTitolo.vb" />
+    <Compile Include="FrmCliOrd.Designer.vb">
+      <DependentUpon>FrmCliOrd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCliOrd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFattura.Designer.vb">
+      <DependentUpon>FrmFattura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFattura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUno.Designer.vb">
+      <DependentUpon>FrmUno.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GdRDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Info.Designer.vb">
+      <DependentUpon>Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsLibreria\ModAutoFormat.vb" />
+    <Compile Include="InsLibreria\ModTitolo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,10 +158,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SalvaNomeTabella.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FemInsClienti.resx">
+      <DependentUpon>FemInsClienti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAprire.resx">
+      <DependentUpon>FrmAprire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliOrd.resx">
+      <DependentUpon>FrmCliOrd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFattura.resx">
+      <DependentUpon>FrmFattura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUno.resx">
+      <DependentUpon>FrmUno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -115,6 +190,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="GdRDataSet.xsc">
+      <DependentUpon>GdRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GdRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GdRDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GdRDataSet.xss">
+      <DependentUpon>GdRDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -132,6 +218,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2025-03-29 160253.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-page.gif" />
+    <None Include="Resources\warning.gif" />
+    <None Include="Resources\Utilizzo del Form.png" />
+    <None Include="Resources\tax.gif" />
+    <None Include="Resources\shuffle.gif" />
+    <None Include="Resources\search-engine.gif" />
+    <None Include="Resources\add.gif" />
+    <Content Include="ordina.ico" />
+    <Content Include="Resources\ago-bg.jpg" />
+    <None Include="Resources\ImgA.bmp" />
+    <None Include="Resources\agoweb.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\ordini.png" />
+    <None Include="Resources\Meno1.png" />
+    <None Include="Resources\Meno.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\frecciaSx.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\confTel.png" />
+    <None Include="Resources\clientiRep.png" />
+    <None Include="Resources\agobg.jpg" />
+    <None Include="Resources\Attesa.jpg" />
+    <None Include="Resources\browsing.gif" />
+    <None Include="Resources\cheque.gif" />
+    <Content Include="Resources\clienti-report-64.png" />
+    <None Include="Resources\computer.gif" />
+    <None Include="Resources\conf-tel.png" />
+    <None Include="Resources\cost-book.gif" />
+    <None Include="Resources\errore.gif" />
+    <None Include="Resources\edit.gif" />
+    <Content Include="Resources\exit-100.png" />
+    <None Include="Resources\exit-64.png" />
+    <None Include="Resources\feedback.gif" />
+    <None Include="Resources\Form NON Utilizza.png" />
+    <None Include="Resources\folders2.png" />
+    <Content Include="Resources\freccia sinistra-64.png" />
+    <None Include="Resources\ko.JPG" />
+    <Content Include="Resources\logout-64.png" />
+    <None Include="Resources\ok.JPG" />
+    <None Include="Resources\order.gif" />
+    <Content Include="Resources\Modifica DataSet.png" />
+    <Content Include="Resources\ordini96.png" />
+    <None Include="Resources\pdf_icon.gif" />
+    <Content Include="Resources\pop.gif" />
+    <None Include="Resources\popEdit.gif" />
+    <Content Include="Resources\report-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
