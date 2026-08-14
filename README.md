@@ -162,10 +162,4 @@ Playlist:
 
 ---
 
-Ital, se vuoi, posso trasformare questo testo in:
-
-- README.md professionale
-- documentazione HTML
-- pagina wiki per GitHub
-
-Dimmi quale formato vuoi usare nel tuo repository.
+Troverai anche un video dimostrativo nella mia PlayList
