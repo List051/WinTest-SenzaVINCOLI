@@ -171,12 +171,4 @@ Canale:
 Playlist:  
 [https://www.youtube.com/watch?v=3FkO8yAd0Mg&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL](https://www.youtube.com/watch?v=3FkO8yAd0Mg&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL)
 
----
 
-Ital, se vuoi, posso trasformare questo testo in:
-
-- README.md professionale
-- documentazione HTML
-- pagina wiki per GitHub
-
-Dimmi quale formato vuoi usare nel tuo repository.
