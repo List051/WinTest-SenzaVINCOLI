@@ -183,12 +183,23 @@ Modifiche incluse:
 
 ---
 
-# **YouTube – Playlist dedicata**
+---
 
-Canale:  
-[https://www.youtube.com/@iaoraGo](https://www.youtube.com/@iaoraGo)
+# 🔗 Link utili
 
-Playlist:  
-[https://www.youtube.com/watch?v=3FkO8yAd0Mg&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL](https://www.youtube.com/watch?v=3FkO8yAd0Mg&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL)
+## 📚 Documentazione della libreria WinItalPascal
+
+- [📘 Documentazione Tecnica (*.md)](https://github.com/List051/WinItalPascal_Lib/tree/main/Documentation)
+- [📄 Manuali PDF della libreria](https://github.com/List051/WinItalPascal_Lib/tree/main/Help/pdf)
+
+---
+
+## 🎬 Video dimostrativi
+
+- [🎥 Video Esempi – WinVideoShowcase](https://list051.github.io/WinVideoShowcase/)
+- [📺 Canale YouTube](https://www.youtube.com/@iaoraGo)
+- [🎞️ Playlist completa WinItalPascal](https://www.youtube.com/watch?v=UboNebA_Irs&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL)
+
+---
 
 
